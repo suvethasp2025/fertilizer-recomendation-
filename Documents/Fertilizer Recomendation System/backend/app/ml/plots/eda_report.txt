@@ -1,0 +1,70 @@
+=== EXPLORATORY DATA ANALYSIS REPORT ===
+
+Dataset Shape: 99 rows, 9 columns
+
+--- Data Types and Missing Values ---
+Temperature: type=int64, nulls=0
+Humidity: type=int64, nulls=0
+Moisture: type=int64, nulls=0
+Soil Type: type=str, nulls=0
+Crop Type: type=str, nulls=0
+Nitrogen: type=int64, nulls=0
+Potassium: type=int64, nulls=0
+Phosphorous: type=int64, nulls=0
+Fertilizer Name: type=str, nulls=0
+
+--- Summary Statistics ---
+       Temperature   Humidity   Moisture   Nitrogen  Potassium  Phosphorous
+count    99.000000  99.000000  99.000000  99.000000  99.000000    99.000000
+mean     30.282828  59.151515  43.181818  18.909091   3.383838    18.606061
+std       3.502304   5.840331  11.271568  11.599693   5.814667    13.476978
+min      25.000000  50.000000  25.000000   4.000000   0.000000     0.000000
+25%      28.000000  54.000000  34.000000  10.000000   0.000000     9.000000
+50%      30.000000  60.000000  41.000000  13.000000   0.000000    19.000000
+75%      33.000000  64.000000  50.500000  24.000000   7.500000    30.000000
+max      38.000000  72.000000  65.000000  42.000000  19.000000    42.000000
+
+--- Categorical Values ---
+Unique values in 'Soil Type': <StringArray>
+['Sandy', 'Loamy', 'Black', 'Red', 'Clayey']
+Length: 5, dtype: str
+Value Counts:
+Soil Type
+Loamy     21
+Sandy     20
+Clayey    20
+Black     19
+Red       19
+
+Unique values in 'Crop Type': <StringArray>
+[      'Maize',   'Sugarcane',      'Cotton',     'Tobacco',       'Paddy',
+      'Barley',       'Wheat',     'Millets',   'Oil seeds',      'Pulses',
+ 'Ground Nuts']
+Length: 11, dtype: str
+Value Counts:
+Crop Type
+Sugarcane      13
+Cotton         12
+Millets        11
+Paddy          10
+Pulses         10
+Wheat           9
+Tobacco         7
+Barley          7
+Oil seeds       7
+Ground Nuts     7
+Maize           6
+
+Unique values in 'Fertilizer Name': <StringArray>
+['Urea', 'DAP', '14-35-14', '28-28', '17-17-17', '20-20', '10-26-26']
+Length: 7, dtype: str
+Value Counts:
+Fertilizer Name
+Urea        22
+DAP         18
+28-28       17
+14-35-14    14
+20-20       14
+17-17-17     7
+10-26-26     7
+
